@@ -1,0 +1,29 @@
+Does serializer only converts model to dictionary or vice versa too. Does it do anything else? - YES
+How is dictionay converting to JSON in rest_framework api views - Django does under the hood itseems
+
+Field should only be used for deseialization. During serialization dont get them. How to achieve this? - Maybe use write_only
+
+
+https://pipenv.pypa.io/en/latest/diagnose/
+If pipenv install is not actually installing package (pipenv graph shoes ?), then try this
+pipenv update
+
+
+☤ An exception is raised during Locking dependencies...
+Run pipenv lock --clear and try again. The lock sequence caches results to speed up subsequent runs. The cache may contain faulty results if a bug causes the format to corrupt, even after the bug is fixed. --clear flushes the cache, and therefore removes the bad results.
+
+
+https://stackoverflow.com/questions/64303246/typeerror-abstract-base-class-containing-model-fields-not-permitted-for-proxy-m
+To resolve error after including djoser (Due to bug in djange-rest framework)
+
+Djoser is not supporting latest django and drf frameworks.
+
+https://django-rest-framework-simplejwt.readthedocs.io/
+https://djoser.readthedocs.io/
+
+
+
+{
+    "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY0MTU1MjI3OSwianRpIjoiYmI0NTNmOTE3OTAyNDg0YjliMGNkYTE2MTNmNDY2YWMiLCJ1c2VyX2lkIjozfQ.lhmK-R4JzQSl_h8HnaSUTeyoAv9rwlla7ud01Z1MqEU",
+    "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQxNTUyMjc5LCJqdGkiOiI4NDUyZThkOGYxZDg0YzRmOWU1NGUzZTJhNTI0MDg1YiIsInVzZXJfaWQiOjN9.ZyNAstR5LKByPRkw7VknZFLsS3aNwpNpZdXVzMbKPkY"
+}
